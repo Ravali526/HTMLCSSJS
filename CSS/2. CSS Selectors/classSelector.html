@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        /* grouping selector */
+        /* if we take as section the border, padding, margin will apply for both s1 and s2 */
+        #s1, div{
+                border: 2px solid blue;
+                padding: 5px;
+                margin: 5px;
+        }
+
+        #s2, div{
+            border: 2px solid purple;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .c1{
+            background-color: aquamarine;
+            padding: 15px;
+        }
+
+        .c2{
+            background-color: brown;
+            padding: 15px;
+        }
+
+        #s1, .c1, .c4{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <section id="s1">
+        <div class="c1">one</div>
+        <div class="c2">two</div>
+        <div class="c3">three</div>
+        <div class="c4">four</div>
+    </section>
+
+    <section id="s2">
+        <div class="c1">one</div>
+        <div class="c2">two</div>
+        <div class="c3">three</div>
+        <div class="c4">four</div>
+    </section>
+
+    
+</body>
+</html>

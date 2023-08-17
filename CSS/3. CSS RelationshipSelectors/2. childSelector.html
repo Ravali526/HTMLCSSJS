@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style>
+        ol > li{
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        ul > li{
+            border: 2px solid purple;
+            padding: 10px;
+            margin: 10px;
+        }
+
+         /* targeting child selectors */
+        #s1 > .c2{
+            border: 2px solid cornflowerblue;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ol>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    <section id="s1">
+        <div class="c1">HTML</div>
+        <div class="c2">CSS</div>
+        <div class="c3">javascript</div>
+        <div class="c4">bootstrap</div>
+    </section>
+</body>
+</html>
