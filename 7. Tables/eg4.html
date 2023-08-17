@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+        }
+        table, tr, th, td{
+            border: 1px solid black;
+            padding: 10px;
+            border-spacing: 10px;
+            border-collapse: collapse;
+            border-collapse: separate;
+        }
+        caption{
+            /* caption side top means caption of the table is shown at the top of the table */
+            caption-side: top;
+            /* caption side bottom means caption of the table is shown at the bottom of the table */
+            caption-side: bottom;
+        }
+        td{
+            /* empty cells show means showing the empty box in the table */
+            empty-cells: show;
+            /* empty cells hide means hidding the empty box in the table */
+            empty-cells: hide;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>List of Products</caption>
+        <thead>
+            <!-- table row (tr) -->
+            <tr>
+                <!-- table head(th) -->
+            <th>SNo</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <tr>
+                <!-- table data(td) -->
+                <td>1</td>
+                <td>Samsung</td>
+                <td>40000</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>2</td>
+                <td>oneplus</td>
+                <td>35000</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Vivo</td>
+                <td></td>
+            </tr>
+            </tbody>
+
+            <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>100000</td>
+            </tr>
+            </tfoot>
+
+            
+        </tr>
+    </table>
+</body>
+</html>
